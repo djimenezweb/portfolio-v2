@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .header {
   position: fixed;
   top: 0;
@@ -13,14 +15,25 @@
   background-color: white;
   color: black;
   padding: 1rem 0;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
 }
 
-.main-nav {
+.nav {
   display: flex;
   justify-content: space-between;
-}
+  flex-direction: row;
 
-.nav__list {
-  display: flex;
-  justify-content: space-between;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
 }

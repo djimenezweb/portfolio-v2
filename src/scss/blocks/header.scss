@@ -19,18 +19,23 @@
 }
 
 .nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
 
   &__list {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: clamp(1rem, 3vw, 4rem);
 
     @media screen and (max-width: 640px) {
       display: none;
+      width: 0;
     }
+  }
+
+  &__list--primary {
+    margin: 0 auto;
   }
 
   &__link {

@@ -11,7 +11,7 @@
     <script type="module" src="./js/index.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container flex--row">
         <a href="#"><img src="#" class="logo" /></a>
         <nav class="nav">
@@ -25,17 +25,19 @@
             <li class="nav__list-item"><a href="" class="nav__link">in</a></li>
           </ul>
         </nav>
-        <button class="toggle-button"></button>
+        <button class="toggle-menu" id="toggle-menu" data-status="closed">
+          <div class="hamburger" id="hamburger"></span>
+        </button>
       </div>
     </header>
     <main>
-      <section class="home">
+      <section class="home" id="home">
         <div class="container">
           <h1>Daniel Jiménez</h1>
           <h2>Programador Frontend</h2>
         </div>
       </section>
-      <section class="relleno">
+      <section class="project-grid">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, dolorem. Minima aperiam earum saepe molestiae? Voluptas quas veritatis mollitia
         vero velit saepe ipsa, laborum laboriosam facilis, similique dolorem, esse soluta. Pariatur ipsam rem dolorem asperiores eum! Cupiditate voluptatum
         ipsam porro, sunt modi hic aliquid ipsum minus officia impedit consequuntur vel natus provident repellat veniam culpa ad soluta optio fugiat.

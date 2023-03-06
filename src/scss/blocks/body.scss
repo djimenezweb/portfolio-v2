@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding);
+}
+
 body {
-  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .overflow--hidden {

@@ -8,24 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/61fe6f5b21.js" crossorigin="anonymous"></script>
     <script type="module" src="./js/index.js"></script>
   </head>
   <body>
     <header class="header" id="header">
       <div class="header__content">
-        <a href="#"><img src="#" class="logo" /></a>
+        <a href="#"><i class="nav__icon fa-solid fa-code"></i></a>
         <button class="nav-toggle" id="toggle-button" data-status="closed">
           <div class="hamburger" id="hamburger"></div>
         </button>
         <nav class="nav" id="nav">
           <ul class="nav__list--primary">
-            <li class="nav__list-item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__list-item"><a href="#projects" class="nav__link">Proyectos</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">Contacto</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#home">Home</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#projects">Proyectos</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#contact">Contacto</a></li>
           </ul>
           <ul class="nav__list--secondary">
-            <li class="nav__list-item"><a href="" class="nav__link">Git</a></li>
-            <li class="nav__list-item"><a href="" class="nav__link">in</a></li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="https://github.com/djimenezweb"> <i class="nav__icon fa-brands fa-github"></i></a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="https://codepen.io/djimenezweb"> <i class="nav__icon fa-brands fa-codepen"></i></a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="https://www.linkedin.com/in/djimenezweb/"> <i class="nav__icon fa-brands fa-linkedin"></i></a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -33,13 +41,13 @@
     <main>
       <section class="home" id="home">
         <div class="container">
-          <h1>Daniel Jiménez</h1>
-          <h2>Programador Frontend</h2>
+          <h1 class="hero__title">Daniel Jiménez</h1>
+          <h2 class="hero__text">Programador Frontend</h2>
         </div>
       </section>
 
       <section class="project-grid" id="projects">
-        <h2>Proyectos</h2>
+        <h2 class="section__title">Proyectos</h2>
         <div class="two-cols">
           <div class="project__img animate"><img src="./assets/projects/entertainment.jpg" alt="" /></div>
           <div class="project__info animate">
@@ -87,5 +95,16 @@
         </div>
       </section>
     </main>
+    <footer class="footer" id="contact">
+      <div class="footer__content">
+        <h2 class="section__title">Contacto</h2>
+        <form id="form" class="form" action="form.php" method="post">
+          <input class="form__input" type="text" name="nombre" placeholder="nombre" />
+          <input class="form__input" type="email" name="email" placeholder="email" />
+          <textarea class="form__textarea" name="mensaje" placeholder="mensaje"></textarea>
+          <button class="form__button" type="submit">Enviar</button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

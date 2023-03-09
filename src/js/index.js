@@ -20,8 +20,8 @@ const optionsHeaderScroll = {
 
 const optionsProjects = {
   root: null,
-  threshold: 0.3,
-  rootMargin: '-100px'
+  threshold: 0.2,
+  rootMargin: '-64px'
 };
 
 const observerHeader = new IntersectionObserver(entry => {
@@ -41,5 +41,5 @@ observerHeader.observe(homeElement);
 animatedEntries.forEach(entry => {
   observerProjects.observe(entry);
 });
-rootStyles.setProperty('--scroll-padding', headerHeight + 18 + 'px');
+rootStyles.setProperty('--scroll-padding', headerHeight + 32 + 'px');
 toggleButton.addEventListener('click', toggleMenu);

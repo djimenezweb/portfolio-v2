@@ -1,0 +1,54 @@
+.footer {
+  background-color: hsl(210, 50%, 15%);
+  color: white;
+  padding: 4rem 0 16rem;
+}
+
+.footer__content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form {
+  caret-color: white;
+
+  @media screen and (min-width: 40rem) {
+    max-width: 50%;
+  }
+  &__input {
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 6rem;
+    resize: none;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid white;
+  }
+  &__button {
+    background-color: white;
+    color: hsl(210, 50%, 15%);
+    padding: 1em 3rem;
+    border: 1px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}

@@ -1,7 +1,3 @@
-// El styles lo importamos aquí, ya se carga después al compilar todo
-//sayHello();
-//import { sayHello } from './demo.js';
-
 import '../scss/styles.scss';
 import { toggleMenu } from './toggle-menu.js';
 

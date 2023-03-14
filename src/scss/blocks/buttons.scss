@@ -1,1 +1,16 @@
 @use '../mixins/pseudo.scss' as *;
+
+.button {
+  display: inline-block;
+  font-size: 0.9rem;
+  background-color: hsl(210, 50%, 15%);
+  color: white;
+  padding: 0.5em 1rem;
+  border: 1px solid hsl(210, 50%, 15%);
+  border-radius: 2em;
+
+  &:hover {
+    background-color: transparent;
+    color: hsl(210, 50%, 15%);
+  }
+}

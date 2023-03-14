@@ -8,7 +8,7 @@ $mensaje = $_POST['mensaje'];
 $from = "info@djimenezweb.com";
 $to = "djimenezweb@gmail.com";
 $subject = "Formulario enviado por correo";
-$message = "Nombre: " . $nombre . "Email: " . $email . "Mensaje: " . $mensaje;
+$message = " NOMBRE: " . $nombre . " EMAIL: " . $email . " MENSAJE: " . $mensaje;
 $headers = "From:" . $from;
 
 @mail($to, $subject, $message, $headers);

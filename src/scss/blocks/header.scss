@@ -9,7 +9,7 @@
   background-color: transparent;
   backdrop-filter: blur(8px);
   color: white;
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 39.99rem) {
     backdrop-filter: none;
     background-color: hsl(0 0% 100% / 0.1);
   }
@@ -22,7 +22,7 @@
 }
 
 .header__content {
-  width: 80%;
+  width: 85%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -35,7 +35,7 @@
   justify-content: space-between;
   flex-grow: 1;
 
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 39.99rem) {
     position: fixed;
     z-index: 10;
     flex-direction: column;
@@ -60,7 +60,7 @@
   margin: 0 auto;
   gap: clamp(1rem, 5vw, 4rem);
 
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 39.99rem) {
     margin: 0 0 4rem;
     flex-direction: column;
     gap: 3rem;
@@ -70,7 +70,7 @@
 .nav__list--secondary {
   display: flex;
   gap: clamp(1rem, 2vw, 4rem);
-  @media screen and (max-width: 40rem) {
+  @media screen and (max-width: 39.99rem) {
     justify-content: center;
     gap: 2rem;
   }
@@ -89,12 +89,12 @@
 
 .nav-toggle {
   display: none;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 39.99rem) {
     display: block;
     position: absolute;
     z-index: 100;
     top: 0.8rem;
-    right: 10%;
+    right: 7.5%;
     width: 2.5rem;
     height: 2rem;
     border: 0;

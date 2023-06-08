@@ -1,1 +1,13 @@
+.project__description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
 
+.project__description > a {
+  color: hsl(210, 50%, 15%);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/code.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Jiménez</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,13 +26,13 @@
           </ul>
           <ul class="nav__list--secondary">
             <li class="nav__list-item">
-              <a class="nav__link" href="https://github.com/djimenezweb"> <i class="nav__icon fa-brands fa-github"></i></a>
+              <a class="nav__link" href="https://github.com/djimenezweb" target="_blank"> <i class="nav__icon fa-brands fa-github"></i></a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__link" href="https://codepen.io/djimenezweb"> <i class="nav__icon fa-brands fa-codepen"></i></a>
+              <a class="nav__link" href="https://codepen.io/djimenezweb" target="_blank"> <i class="nav__icon fa-brands fa-codepen"></i></a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__link" href="https://www.linkedin.com/in/djimenezweb/"> <i class="nav__icon fa-brands fa-linkedin"></i></a>
+              <a class="nav__link" href="https://www.linkedin.com/in/djimenezweb/" target="_blank"> <i class="nav__icon fa-brands fa-linkedin"></i></a>
             </li>
           </ul>
         </nav>
@@ -48,62 +48,122 @@
 
       <section class="project-grid" id="projects">
         <h2 class="section__title">Proyectos</h2>
+
         <div class="two-cols">
-          <div class="project__img animate"><img src="./assets/projects/entertainment.jpg" alt="" /></div>
+          <div class="project__img animate">
+            <a href="/bidder"><img src="./assets/projects/bidder.jpg" alt="" /></a>
+          </div>
           <div class="project__info animate">
-            <h3>Entertainment Web</h3>
-            <p>
-              Página web que hace peticiones a la API de <a href="https://www.themoviedb.org/">The Movie Database</a>, con opciones de búsqueda y guardado de
-              títulos favoritos en la memoria local. Realizado en HTML, CSS y JavaScript a partir de un proyecto de Frontend Mentor.
+            <h3 class="project__title">Bidder</h3>
+            <p class="project__description">
+              Una aplicación de subastas hecha con <strong>React</strong> y <strong>Firebase</strong>. Los usuarios pueden darse de alta e iniciar sesión,
+              publicar anuncios con fotos y pujar en otras subastas. La autenticación de usuarios y la base de datos está hecha en <strong>Firebase</strong>.
+              También se han usado las librerías <strong>React Router</strong> para las rutas, <strong>React Hook Form</strong> para la validación de los
+              formularios, <strong>Styled Components</strong> para los estilos y <strong>Framer Motion</strong> para las animaciones.
+            </p>
+            <a class="button" href="/bidder">Ver página</a>
+            <a class="button" href="https://github.com/djimenezweb/bidder" target="_blank">Ver código</a>
+          </div>
+        </div>
+
+        <div class="two-cols">
+          <div class="project__img animate">
+            <a href="/planets"><img src="./assets/projects/planets.jpg" alt="" /></a>
+          </div>
+          <div class="project__info animate">
+            <h3 class="project__title">Planets fact site</h3>
+            <p class="project__description">
+              Sitio multipágina hecho con <strong>React</strong> adaptado a escritorio, tableta y móvil. Las rutas se gestionan con
+              <strong>React Router</strong>. Los estilos están hechos con <strong>Styled Components</strong>.
+            </p>
+            <a class="button" href="/planets">Ver página</a>
+            <a class="button" href="https://github.com/djimenezweb/planets-react" target="_blank">Ver código</a>
+          </div>
+        </div>
+
+        <div class="two-cols">
+          <div class="project__img animate">
+            <a href="/neon"><img src="./assets/projects/neon.jpg" alt="" /></a>
+          </div>
+          <div class="project__info animate">
+            <h3 class="project__title">Neon</h3>
+            <p class="project__description">
+              Uno de mis primeros proyectos hechos con <strong>React</strong>. El desafío era hacer una réplica lo más fiel posible de la
+              <a href="https://cruip.com/neon/" target="_blank">plantilla Neon de Cruip</a>. Los estilos están resueltos con <strong>CSS Modules</strong>.
+            </p>
+            <a class="button" href="/neon">Ver página</a>
+            <a class="button" href="https://github.com/djimenezweb/neon-react" target="_blank">Ver código</a>
+          </div>
+        </div>
+
+        <div class="two-cols">
+          <div class="project__img animate">
+            <a href="/entertainment-web"><img src="./assets/projects/entertainment.jpg" alt="" /></a>
+          </div>
+          <div class="project__info animate">
+            <h3 class="project__title">Entertainment Web</h3>
+            <p class="project__description">
+              Página web que hace peticiones a la API de <a href="https://www.themoviedb.org/" target="_blank">The Movie Database</a>, con opciones de búsqueda
+              y guardado de títulos favoritos en la memoria local. Realizado en <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> a
+              partir de un proyecto de Frontend Mentor.
             </p>
             <a class="button" href="/entertainment-web">Ver página</a>
-            <a class="button" href="https://github.com/djimenezweb/entertainment-web">Ver código</a>
+            <a class="button" href="https://github.com/djimenezweb/entertainment-web" target="_blank">Ver código</a>
           </div>
         </div>
         <div class="two-cols">
-          <div class="project__img animate"><img src="./assets/projects/photosnap.jpg" alt="" /></div>
+          <div class="project__img animate">
+            <a href="/photosnap"><img src="./assets/projects/photosnap.jpg" alt="" /></a>
+          </div>
           <div class="project__info animate">
-            <h3>Photosnap</h3>
-            <p>
-              Proyecto de Frontend Mentor de una página web para compartir fotos. El proyecto entero se compone de una landing page y tres páginas adicionales
-              (Stories, Features y Pricing). Todas las páginas están adaptadas a móvil, tableta y escritorio. La versión para móvil tiene un menú responsive.
-              Realizado en HTML, CSS y JavaScript.
+            <h3 class="project__title">Photosnap</h3>
+            <p class="project__description">
+              Página web para compartir fotos basada en un proyecto de <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. El sitio se
+              compone de una landing page y tres páginas adicionales (Stories, Features y Pricing). Todas las páginas están adaptadas a móvil, tableta y
+              escritorio. La versión para móvil tiene un menú responsive. Realizado en <strong>HTML</strong>, <strong>CSS</strong> y
+              <strong>JavaScript</strong>.
             </p>
             <a class="button" href="/photosnap">Ver página</a>
-            <a class="button" href="https://github.com/djimenezweb/photosnap">Ver código</a>
+            <a class="button" href="https://github.com/djimenezweb/photosnap" target="_blank">Ver código</a>
           </div>
         </div>
         <div class="two-cols">
-          <div class="project__img animate"><img src="./assets/projects/todo-light.jpg" alt="" /></div>
+          <div class="project__img animate">
+            <a href="/todo-app-vite"><img src="./assets/projects/todo-light.jpg" alt="" /></a>
+          </div>
           <div class="project__info animate">
-            <h3>Todo list</h3>
-            <p>
-              Pequeña aplicación hecha en JavaScript que almacena tareas en la memoria local. Incluye filtros para mostrar todas las tareas, las activas y las
-              completadas. Adaptada a móvil y escritorio. También tiene modo claro y oscuro, cuya preferencia se almacena en la memoria local.
+            <h3 class="project__title">Todo list</h3>
+            <p class="project__description">
+              Pequeña aplicación hecha en <strong>JavaScript</strong> que almacena tareas en la memoria local. Incluye filtros para mostrar todas las tareas,
+              las activas y las completadas. Adaptada a móvil y escritorio. También tiene modo claro y oscuro, cuya preferencia se almacena en la memoria local.
             </p>
             <a class="button" href="/todo-app-vite">Ver página</a>
-            <a class="button" href="https://github.com/djimenezweb/todo-app-vite">Ver código</a>
+            <a class="button" href="https://github.com/djimenezweb/todo-app-vite" target="_blank">Ver código</a>
           </div>
         </div>
         <div class="two-cols">
-          <div class="project__img animate"><img src="./assets/projects/wordle.jpg" alt="" /></div>
+          <div class="project__img animate">
+            <a href="/wordle"><img src="./assets/projects/wordle.jpg" alt="" /></a>
+          </div>
           <div class="project__info animate">
-            <h3>Wordle</h3>
-            <p>Una versión del popular juego programado en JavaScript.</p>
+            <h3 class="project__title">Wordle</h3>
+            <p class="project__description">Una versión del popular juego programado en <strong>JavaScript</strong>.</p>
             <a class="button" href="/wordle">Ver página</a>
-            <a class="button" href="https://github.com/djimenezweb/wordle">Ver código</a>
+            <a class="button" href="https://github.com/djimenezweb/wordle" target="_blank">Ver código</a>
           </div>
         </div>
         <div class="two-cols">
-          <div class="project__img animate"><img src="./assets/projects/rock-paper-scissors.jpg" alt="" /></div>
+          <div class="project__img animate">
+            <a href="/rock-paper-scissors"><img src="./assets/projects/rock-paper-scissors.jpg" alt="" /></a>
+          </div>
           <div class="project__info animate">
-            <h3>Rock, Paper, Scissors</h3>
-            <p>
-              El clásico juego de Piedra, Papel y Tijera hecho enteramente en CSS y JavaScript. En la versión avanzada podrás jugar, además, con las opciones
-              Lizard y Spock.
+            <h3 class="project__title">Rock, Paper, Scissors</h3>
+            <p class="project__description">
+              El clásico juego de Piedra, Papel y Tijera hecho enteramente en <strong>CSS</strong> y <strong>JavaScript</strong>. En la versión avanzada podrás
+              jugar, además, con las opciones Lizard y Spock.
             </p>
-            <a class="button" href="rock-paper-scissors">Ver página</a>
-            <a class="button" href="https://github.com/djimenezweb/rock-paper-scissors">Ver código</a>
+            <a class="button" href="/rock-paper-scissors">Ver página</a>
+            <a class="button" href="https://github.com/djimenezweb/rock-paper-scissors" target="_blank">Ver código</a>
           </div>
         </div>
       </section>

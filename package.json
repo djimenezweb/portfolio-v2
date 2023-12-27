@@ -19,5 +19,8 @@
     "vite": "^4.0.0",
     "vite-plugin-image-optimizer": "^1.0.7",
     "vite-plugin-minify": "^1.5.2"
+  },
+  "dependencies": {
+    "@img/sharp-win32-x64": "^0.33.1"
   }
 }

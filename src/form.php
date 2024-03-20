@@ -1,4 +1,7 @@
 <?php
+// Filtrar spam
+if(!empty($_POST['areyouarobot'])) die();
+
 // Campos del formulario
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
